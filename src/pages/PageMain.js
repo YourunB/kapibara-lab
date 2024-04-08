@@ -37,7 +37,22 @@ export const PageMain = () => {
           </div>
 
         </div>
+      </section>
 
+      <section className="gallery-section" id="gallery">
+        <div className="wrapper">
+          <h2 className="gallery-section__title">Галерея</h2>
+
+          <div className="gallery">
+            <div className="gallery__box-img gallery__box-img_big"><img src="./images/gallery1.jpg" alt="Laboratory" /></div>
+            <div className="gallery__box-img gallery__box-img_wide"><img src="./images/gallery4.jpg" alt="Laboratory" /></div>
+            <div className="gallery__box-img"><img src="./images/gallery5.jpg" alt="Laboratory" /></div>
+            <div className="gallery__box-img"><img src="./images/gallery6.jpg" alt="Laboratory" /></div>
+            <div className="gallery__box-img"><img src="./images/gallery2.jpg" alt="Laboratory" /></div>
+            <div className="gallery__box-img"><img src="./images/gallery3.jpg" alt="Laboratory" /></div>
+            <div className="gallery__box-img gallery__box-img_wide"><img src="./images/gallery7.jpg" alt="Laboratory" /></div>
+          </div>
+        </div>
       </section>
     </main>
   );
