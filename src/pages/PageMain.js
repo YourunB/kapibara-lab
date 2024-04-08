@@ -2,5 +2,5 @@ import React from "react";
 import "./PageMain.sass";
 
 export const PageMain = () => {
-  return <main className="PageMain">Hello</main>;
+  return <main className="page-main">Hello</main>;
 };
