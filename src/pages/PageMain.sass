@@ -11,10 +11,7 @@
   height: 100%
   margin: auto
 
-.flex-center
-  display: flex
-  justify-content: center
-  align-items: center
+//-----------------------results-section-----------------------
 
 .results-section
   height: 560px
@@ -93,3 +90,96 @@
     width: 221px
     height: 45px
     background: #E9EAF9
+
+//-----------------------laboratory-section-----------------------
+
+.laboratory-section
+  background: white
+
+.laboratory-section__description
+  padding-top: 96px
+  padding-bottom: 96px
+  font-style: italic
+  font-weight: 600
+  font-size: 24px
+  line-height: 140%
+  text-align: center
+
+.laboratory-box
+  background: linear-gradient(0deg, #E9EAF9 0%, #F5F5FF 100%)
+  padding: 48px 0
+
+.laboratory-box .wrapper
+  display: flex
+  align-items: center
+  gap: 24px
+
+.laboratory-box__content__title
+  margin: 0 0 36px 0
+  font-weight: 600
+  font-size: 36px
+  line-height: 44px
+
+.laboratory-box__title-mobile
+  display: none
+  font-weight: 600
+  font-size: 28px
+  line-height: 34px
+  margin-bottom: 0
+
+.laboratory-box__content__text
+  margin: 0 0 18px 0
+  font-size: 21px
+  line-height: 140%
+  
+.laboratory-box__content__btn
+  margin-top: 34px
+  color: white
+  display: block
+  width: 249px
+  height: 53px
+  background: #737BE1
+  gap: 10px
+  border-radius: 8px
+  font-size: 21px
+  line-height: 140%
+
+@media (max-width: 899px)
+  .laboratory-box
+    padding: 12px 0
+
+  .laboratory-box .wrapper
+    flex-wrap: wrap-reverse
+    justify-content: center
+
+  .laboratory-section__description
+    font-size: 18px
+    padding-top: 76px
+    padding-bottom: 30px
+
+  .laboratory-box__content__title
+    display: none
+    
+  .laboratory-box__title-mobile
+    display: block
+    width: 100%
+
+  .laboratory-box__content__text
+    font-size: 18px
+
+  .laboratory-box__content__btn
+    width: 223px
+    height: 49px
+    font-size: 18px
+    margin-top: 20px
+
+  .laboratory-box__img
+    width: 324px
+
+//----------------------------gallery-section---------------------------
+
+.flex-center
+  display: flex
+  justify-content: center
+  align-items: center
+

@@ -25,7 +25,7 @@ export const Header = () => {
         </nav>
 
         <a className="header__link" href="tel:+71234567890">
-          <img className="header__link__img" src="./images/svg/phone.svg" />
+          <img className="header__link__img" src="./images/svg/phone.svg" alt="Phone" />
           <div className="header__link__phone">
             +7 123 456 7890
             <p>Звонок бесплатный</p>
