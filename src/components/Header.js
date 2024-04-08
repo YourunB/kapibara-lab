@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../components/Header.sass";
 
 export const Header = () => {
+  const menuLaboratoryItem = useRef(null);
+  const menuGalleryItem = useRef(null);
+  const menuFeedbackItem = useRef(null);
+
+  function updateMenuItem(e) {
+    menuLaboratoryItem.current.className = "header__menu__list__item";
+    menuGalleryItem.current.className = "header__menu__list__item";
+    menuFeedbackItem.current.className = "header__menu__list__item";
+    e.currentTarget.className =
+      "header__menu__list__item header__menu__list__item_active";
+  }
+
   return (
     <header className="header">
       <div className="header-wrapper">
@@ -12,13 +24,25 @@ export const Header = () => {
 
         <nav className="header__menu">
           <ul className="header__menu__list">
-            <li className="header__menu__list__item header__menu__list__item_active">
+            <li
+              ref={menuLaboratoryItem}
+              onClick={(e) => updateMenuItem(e)}
+              className="header__menu__list__item header__menu__list__item_active"
+            >
               <a href="#laboratory">Лаборатория</a>
             </li>
-            <li className="header__menu__list__item">
+            <li
+              ref={menuGalleryItem}
+              onClick={(e) => updateMenuItem(e)}
+              className="header__menu__list__item"
+            >
               <a href="#gallery">Галерея</a>
             </li>
-            <li className="header__menu__list__item">
+            <li
+              ref={menuFeedbackItem}
+              onClick={(e) => updateMenuItem(e)}
+              className="header__menu__list__item"
+            >
               <a href="#feedback">Оставить заявку</a>
             </li>
           </ul>
