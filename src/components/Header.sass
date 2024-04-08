@@ -50,6 +50,7 @@
   display: flex
   justify-content: center
   align-items: center
+  transition: 0.7s
 
 .header__menu__list__item a
   padding: 8px 24px
@@ -58,6 +59,15 @@
   color: #4F58C9
   background: #E9EAF9
   border-radius: 4px
+
+@media (hover:hover)
+  .header__menu__list__item:hover
+    cursor: pointer
+    transform: scale(1.1)
+
+.header__menu__list__item:active
+  transition: 0.2s
+  transform: scale(0.9)
 
 .header__link
   display: flex
