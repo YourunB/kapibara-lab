@@ -27,7 +27,6 @@
   display: flex
   flex-wrap: wrap
   justify-content: center
-  padding: 0
   gap: 19px
   margin: 40px 0
 
@@ -62,7 +61,6 @@
   transition: 0.7s
 
 .feedback-form__message
-  display: none
   position: absolute
   transform: scale(0)
   opacity: 0
@@ -74,7 +72,7 @@
   border-radius: 8px
   background: linear-gradient(0deg, #E9EAF9 0%, #F5F5FF 100%)
   padding: 0 18px
-  animation: show-form 0.3s forwards
+  /*animation: show-form 0.3s forwards*/
 
 .feedback-form__message-wrapper
   gap: 24px
@@ -113,6 +111,7 @@
 
   .feedback-form__box-inputs
     margin: 36px 0
+    padding: 0
 
   .feedback-form__box-inputs__input
     width: 324px
@@ -133,6 +132,11 @@
   .feedback-form__message__text
     font-size: 18px
     text-align: center
+
+.flex-center
+  display: flex
+  flex-wrap: wrap
+  align-items: center
 
 @keyframes show-form
   0%

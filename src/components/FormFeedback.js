@@ -12,12 +12,14 @@ export const FormFeedback = () => {
         <input className="feedback-form__box-inputs__input" autoComplete="off" placeholder="Отчество" id="input-patronymic" pattern="^[a-zA-Zа-яА-Я-]*$" type={'text'} min={2} required></input>
       </fieldset>
       <button className="feedback-form__btn flex-center">Отправить<img src="./images/svg/check.svg" alt="Check" /></button>
+      
       <div className="feedback-form__message flex-center">
         <div className="feedback-form__message-wrapper flex-center">
           <img src="./images/svg/check-circle.svg" alt="Info" />
           <p className="feedback-form__message__text">Спасибо за предоставленную информацию, мы свяжемся с вами в ближайшее время.</p>
         </div>
       </div>
+      
     </form>
   );
 };
