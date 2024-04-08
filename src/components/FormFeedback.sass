@@ -59,9 +59,14 @@
   color: #FFFFFF
   display: block
   margin: auto
+  transition: 0.7s
 
 .feedback-form__message
+  display: none
   position: absolute
+  transform: scale(0)
+  opacity: 0
+  z-index: 100
   left: 0
   top: 0
   width: 100%
@@ -69,6 +74,7 @@
   border-radius: 8px
   background: linear-gradient(0deg, #E9EAF9 0%, #F5F5FF 100%)
   padding: 0 18px
+  animation: show-form 0.3s forwards
 
 .feedback-form__message-wrapper
   gap: 24px
@@ -80,6 +86,15 @@
   font-size: 24px
   line-height: 140%
   color: #737BE1
+
+@media (hover:hover)
+  .feedback-form__btn:hover
+    cursor: pointer
+    transform: scale(1.1)
+
+.feedback-form__btn:hover
+  transition: 0.2s
+  transform: scale(0.9)
 
 @media (max-width: 899px)
   .feedback-form
@@ -118,3 +133,11 @@
   .feedback-form__message__text
     font-size: 18px
     text-align: center
+
+@keyframes show-form
+  0%
+    transform: scale(0)
+    opacity: 0
+  100%
+    transform: scale(1)
+    opacity: 1
