@@ -9,7 +9,8 @@
   color: #4C4C4C
 
 .header-wrapper
-  max-width: 1400px
+  max-width: 1436px
+  padding: 0 18px
   width: 100%
   height: 100%
   margin: auto
@@ -26,26 +27,30 @@
   display: flex
   align-items: center
   gap: 24px
-
-.header__logo p
+  width: 400px
   font-size: 14px
-  width: 179px
 
 .header__logo img 
   width: 194px
 
 .header__menu
-  padding-right: 44px
+  padding-right: 10px
 
 .header__menu__list
   list-style-type: none
   display: flex
   gap: 24px
+  padding: 0
+  margin: 0
 
 .header__menu__list__item
   padding: 8px 24px
   font-size: 18px
   font-weight: 500
+  text-align: center
+  display: flex
+  justify-content: center
+  align-items: center
 
 .header__menu__list__item_active
   color: #4F58C9
@@ -69,3 +74,36 @@
   font-weight: 400
   font-size: 14px
   color: #4C4C4C
+
+@media (max-width: 1240px)
+  .header__logo
+    flex-wrap: wrap
+    gap: 6px
+    width: 280px
+  
+  .header__menu
+    padding-right: 0
+
+  .header__link
+    text-align: center
+
+@media (max-width: 899px)
+  .header
+    height: 110px
+
+  .header-wrapper
+    gap: 0
+
+  .header__logo
+    width: 320px
+    font-size: 12px
+
+  .header__menu
+    display: none
+
+  .header__link
+    padding: 0 5px 5px 0
+
+  .header__link__phone
+    display: none
+  
