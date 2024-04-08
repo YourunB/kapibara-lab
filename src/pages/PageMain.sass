@@ -1,0 +1,95 @@
+.main
+  max-width: 1920px
+  width: 100%
+  margin: auto
+  font-family: 'Montserrat'
+
+.wrapper
+  max-width: 1436px
+  padding: 0 18px
+  width: 100%
+  height: 100%
+  margin: auto
+
+.flex-center
+  display: flex
+  justify-content: center
+  align-items: center
+
+.results-section
+  height: 560px
+  background: url('../../public/images/back.jpg') no-repeat
+  background-size: cover
+  background-position: center
+
+.results-section .wrapper
+  display: grid
+  align-items: center
+  grid-template-columns: 1.85fr 1fr
+
+.results-section__kapibara
+  height: 100%
+  width: fit-content
+  display: flex
+  align-items: flex-end
+  max-width: 367px
+  width: 100%
+
+.results-section__kapibara__img
+  width: 100%
+
+.results-section__text
+  font-weight: 700
+  font-size: 48px
+  font-style: normal
+  text-transform: uppercase
+  margin-top: 24px
+
+.results-section__text__top
+  width: 623px
+  height: 83px
+  background: #737BE1
+  border-radius: 8px 8px 8px 0px
+  line-height: 59px
+  color: #FFFFFF
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 0px 4px 4px rgba(0, 0, 0, 0.25)
+  margin: 0
+
+.results-section__text__bottom
+  background: #FFFFFF
+  border-radius: 0px 0px 8px 8px
+  width: 430px
+  height: 83px
+  line-height: 59px
+  color: #737BE1
+  margin: 0
+
+@media (max-width: 899px)
+  .results-section
+    height: 243px
+
+  .results-section .wrapper
+    display: block
+    position: relative
+
+  .results-section__kapibara
+    margin: auto
+    max-width: 170px
+  
+  .results-section__text
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: -45px
+    font-size: 24px
+
+  .results-section__text__top
+    width: 318px
+    height: 45px
+    text-shadow: none
+
+  .results-section__text__bottom
+    width: 221px
+    height: 45px
+    background: #E9EAF9
