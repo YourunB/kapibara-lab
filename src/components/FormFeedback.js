@@ -19,6 +19,14 @@ export const FormFeedback = () => {
     }
   }
 
+  function addValidate(element) {
+    console.log(element);
+    if ((element.className = "feedback-form__box-inputs__input")) {
+      element.className =
+        "feedback-form__box-inputs__input feedback-form__box-inputs__input_validate";
+    }
+  }
+
   let formMsg = (
     <div className="feedback-form__message flex-center">
       <div className="feedback-form__message-wrapper flex-center">
@@ -42,6 +50,9 @@ export const FormFeedback = () => {
         <input
           className="feedback-form__box-inputs__input"
           ref={refInputSurname}
+          onInput={(event) => {
+            addValidate(event.target);
+          }}
           autoComplete="off"
           placeholder="Фамилия"
           id="input-surname"
@@ -53,6 +64,9 @@ export const FormFeedback = () => {
         <input
           className="feedback-form__box-inputs__input"
           ref={refInputName}
+          onInput={(event) => {
+            addValidate(event.target);
+          }}
           autoComplete="off"
           placeholder="Имя"
           id="input-name"
@@ -64,6 +78,9 @@ export const FormFeedback = () => {
         <input
           className="feedback-form__box-inputs__input"
           ref={refInputPatronymic}
+          onInput={(event) => {
+            addValidate(event.target);
+          }}
           autoComplete="off"
           placeholder="Отчество"
           id="input-patronymic"
