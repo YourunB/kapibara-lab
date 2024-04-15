@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/kapibara-lab/static/css/main.ee02d5a7.css",
+    "main.css": "/kapibara-lab/static/css/main.3ef18f1f.css",
     "main.js": "/kapibara-lab/static/js/main.7ae3deb1.js",
     "static/media/back.jpg": "/kapibara-lab/static/media/back.dbfd756355a2fea4f13f.jpg",
     "index.html": "/kapibara-lab/index.html",
-    "main.ee02d5a7.css.map": "/kapibara-lab/static/css/main.ee02d5a7.css.map",
+    "main.3ef18f1f.css.map": "/kapibara-lab/static/css/main.3ef18f1f.css.map",
     "main.7ae3deb1.js.map": "/kapibara-lab/static/js/main.7ae3deb1.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee02d5a7.css",
+    "static/css/main.3ef18f1f.css",
     "static/js/main.7ae3deb1.js"
   ]
 }
