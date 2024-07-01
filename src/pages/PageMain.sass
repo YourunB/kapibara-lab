@@ -1,0 +1,227 @@
+.main
+  width: 100%
+  margin: auto
+  font-family: 'Montserrat'
+
+.wrapper
+  max-width: 1436px
+  padding: 0 18px
+  width: 100%
+  height: 100%
+  margin: auto
+
+//-----------------------results-section-----------------------
+
+.results-section
+  height: 560px
+  background: url('../../public/images/back.jpg') no-repeat
+  background-size: cover
+  background-position: center
+
+.results-section .wrapper
+  display: grid
+  align-items: center
+  grid-template-columns: 1.85fr 1fr
+
+.results-section__kapibara
+  height: 100%
+  width: fit-content
+  display: flex
+  align-items: flex-end
+  max-width: 367px
+  width: 100%
+
+.results-section__kapibara__img
+  width: 100%
+
+.results-section__text
+  font-weight: 700
+  font-size: 48px
+  font-style: normal
+  text-transform: uppercase
+  margin-top: 24px
+
+.results-section__text__top
+  width: 623px
+  height: 83px
+  background: #737BE1
+  border-radius: 8px 8px 8px 0px
+  line-height: 59px
+  color: #FFFFFF
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 0px 4px 4px rgba(0, 0, 0, 0.25)
+  margin: 0
+
+.results-section__text__bottom
+  background: #FFFFFF
+  border-radius: 0px 0px 8px 8px
+  width: 430px
+  height: 83px
+  line-height: 59px
+  color: #737BE1
+  margin: 0
+
+@media (max-width: 899px)
+  .results-section
+    height: 243px
+
+  .results-section .wrapper
+    display: block
+    position: relative
+
+  .results-section__kapibara
+    margin: auto
+    max-width: 170px
+  
+  .results-section__text
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: -45px
+    font-size: 24px
+
+  .results-section__text__top
+    width: 318px
+    height: 45px
+    text-shadow: none
+
+  .results-section__text__bottom
+    width: 221px
+    height: 45px
+    background: #E9EAF9
+
+//-----------------------laboratory-section-----------------------
+
+.laboratory-section
+  background: white
+
+.laboratory-section__description
+  padding-top: 96px
+  padding-bottom: 96px
+  font-style: italic
+  font-weight: 600
+  font-size: 24px
+  line-height: 140%
+  text-align: center
+
+.laboratory-box
+  background: linear-gradient(0deg, #E9EAF9 0%, #F5F5FF 100%)
+  padding: 48px 0
+
+.laboratory-box .wrapper
+  display: flex
+  align-items: center
+  gap: 24px
+
+.laboratory-box__content__title
+  margin: 0 0 36px 0
+  font-weight: 600
+  font-size: 36px
+  line-height: 44px
+
+.laboratory-box__title-mobile
+  display: none
+  font-weight: 600
+  font-size: 28px
+  line-height: 34px
+  margin-bottom: 0
+
+.laboratory-box__content__text
+  margin: 0 0 18px 0
+  font-size: 21px
+  line-height: 140%
+  
+.laboratory-box__content__btn
+  margin-top: 34px
+  color: white
+  display: block
+  width: 249px
+  height: 53px
+  background: #737BE1
+  gap: 10px
+  border-radius: 8px
+  font-size: 21px
+  line-height: 140%
+  transition: 0.7s
+
+@media (hover:hover)
+  .laboratory-box__content__btn:hover
+    cursor: pointer
+    transform: scale(1.1)
+
+.laboratory-box__content__btn:active
+  transition: 0.2s
+  transform: scale(0.9)
+
+@media (max-width: 899px)
+  .laboratory-box
+    padding: 12px 0
+
+  .laboratory-box .wrapper
+    flex-wrap: wrap-reverse
+    justify-content: center
+
+  .laboratory-section__description
+    font-size: 18px
+    padding-top: 76px
+    padding-bottom: 30px
+
+  .laboratory-box__content__title
+    display: none
+    
+  .laboratory-box__title-mobile
+    display: block
+    width: 100%
+
+  .laboratory-box__content__text
+    font-size: 18px
+
+  .laboratory-box__content__btn
+    width: 223px
+    height: 49px
+    font-size: 18px
+    margin: 20px 0 24px 0
+
+  .laboratory-box__img
+    width: 324px
+
+//----------------------------gallery-section---------------------------
+
+.gallery-section
+  background: white
+  padding: 96px 0
+
+.gallery-section__title
+  margin: 0 0 48px 0
+  font-weight: 600
+  font-size: 36px
+  line-height: 44px
+
+@media (max-width: 899px)
+  .gallery-section
+    padding: 30px 0
+
+  .gallery-section__title
+    margin-bottom: 25px
+    font-size: 28px
+    line-height: 34px
+
+//----------------------------feedback-section--------------------------
+
+.feedback-section
+  background: white
+  padding-bottom: 96px
+
+@media (max-width: 899px)
+  .feedback-section
+    padding-bottom: 30px
+
+  .feedback-section .wrapper
+    padding: 0
+
+//----------------------------------------------------------------------
+
+.flex-center
+  display: flex
+  justify-content: center
+  align-items: center
